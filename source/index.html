@@ -5,8 +5,152 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
+    <header class="page-header">
+      <div class="wrapper">
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="photo.html">Фото и видео</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">Форма отзыва</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="https://up.htmlacademy.ru/adaptive/18">HTML Academy</a>
+            </li>
+          </ul>
+          <button class="main-nav__toggle" type="button" aria-label="Открыть меню">
+            <img src="https://via.placeholder.com/23x22" width="23" height="22">
+          </button>
+        </nav>
+        <a class="page-header__logo">
+          <img class="main-nav__image" src="https://via.placeholder.com/102x83" width="102" height="83" alt="Логотип сайта Седона">
+        </a>
+      </div>
+    </header>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+    <main class="page-main">
+      <section class="welcome-image">
+        <h1 class="visually-hidden">Welcome to the gorgeous Sedona</h1>
+        <img class="welcome-image__image" src="https://via.placeholder.com/281x214" width="281" height="214" alt="Добро пожаловать в Седону">
+      </section>
 
+      <section class="features">
+        <div class="features__header">
+          <h2 class="features__caption">
+            Седона — небольшой городок в Аризоне, заслуживающий большего!
+          </h2>
+          <p class="features__introduction">
+            Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
+          </p>
+        </div>
+        <figure class="features-figure">
+          <figcaption class="features-figcaption">
+            <h3 class="features__title">Настоящий городок</h3>
+            <span class="features__number">— №1 —</span>
+            <p class="features__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
+          </figcaption>
+          <img class="features__image" src="https://via.placeholder.com/320x260" width="320" height="260"  alt="городок Седона">
+        </figure>
+      </section>
+
+      <section class="advanteges">
+        <h2 class="visually-hidden">Достоинства Седоны</h2>
+        <ul class="advanteges__list">
+          <li class="advanteges-item advanteges__item--housing"> //сделала можификаторами, как в демке. Но может лучше просто svg вставить
+            <h3 class="advanteges__title">Жилье</h3>
+            <p class="advanteges__description">
+              Рекомендуем пожить в настоящем мотеле, все как в кино!
+            </p>
+          </li>
+          <li class="advanteges-item advanteges__item--souvenirs">
+            <h3 class="advanteges__title">Сувениры</h3>
+            <p class="advanteges__description">
+              Не только китайского, но и местного производства!
+            </p>
+          </li>
+          <li class="advanteges-item advanteges__item--food">
+            <h3 class="advanteges__title">Еда</h3>
+            <p class="advanteges__description">
+              Не только китайского, но и местного производства!
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="features">
+        <h2 class="visually-hidden">Причины, по которым вам обязательно нужно посетить Седону</h2>
+        <figure class="features__figure">
+          <figcaption class="features__figcaption">
+            <h3 class="features__title">Там есть мост Дьявола</h3>
+            <span class="features__number">— №2 —</span>
+            <p class="features__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+          </figcaption>
+          <img class="features__image" src="https://via.placeholder.com/320x260" width="320" height="260" alt="Мост Дьявола">
+        </figure>
+        <ul class="features__list">
+          <li class="features__item">
+            <h3 class="features__title">Небольшая площадь</h3>
+            <span class="features__number">— №3 —</span>
+            <p class="features__description">Все интересные места находятся очень близко</p>
+          </li>
+          <li class="features__item">
+            <h3 class="features__title">Красивая дорога</h3>
+            <span class="features__number">— №4 —</span>
+            <p class="features__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </li>
+          <li class="features__item">
+            <h3 class="features__title">Мало туристов</h3>
+            <span class="features__number">— №5 —</span>
+            <p class="features__description">Большинство едет в гранд каньон и толпится там</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="search-hotel">
+        <h2 class="search-hotel__title">
+          Заинтересовались?
+        </h2>
+        <p class="search-hotel__description">
+          Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
+        </p>
+        <button class="button search-hotel__button">Найти гостиницу</button>
+      </section>
+
+      <section class="map">
+        <h2 class="visually-hidden">Карта Седоны</h2>
+        <img class="map-image" src="https://via.placeholder.com/320x350" width="320" height="350">
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <b class="page-footer__hashtag">#visitsedona</b>
+      <ul class="page-footer__social social-networks">
+        <li class="social-networks__item">
+          <a class="social-networks__link" href="#" aria-label="Мы в Twitter">
+            <img class="social-networks__icon" src="https://via.placeholder.com/18x14" width="18" height="14">
+          </a>
+        </li>
+        <li class="social-networks__item">
+          <a class="social-networks__link" href="#" aria-label="Наша страничка в Facebook">
+            <img class="social-networks__icon" src="https://via.placeholder.com/9x18" width="9" height="18">
+          </a>
+        </li>
+        <li class="social-networks__item">
+          <a class="social-networks__link" href="#" aria-label="Наш канал на youtube">
+            <img class="social-networks__icon" src="https://via.placeholder.com/20x14" width="20" height="14">
+          </a>
+        </li>
+      </ul>
+      <div class="page-footer__copyright copyright">
+        <span class="copyright__author">Разработано:</span>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт HTML Academy">
+          <img class="copyright__icon" src="https://via.placeholder.com/27x34" width="27" height="34">
+        </a>
+      </div>
+    </footer>
   </body>
 </html>
