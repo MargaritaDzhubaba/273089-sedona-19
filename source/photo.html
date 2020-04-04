@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link href="css/style.css" rel="stylesheet">
     <title>HTML Academy: Седона</title>
   </head>
   <body>
@@ -10,7 +11,7 @@
         <nav class="main-nav">
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a class="main-nav__link href="index.html"">Главная</a>
+              <a class="main-nav__link" href="index.html">Главная</a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link">Фото и видео</a>
@@ -27,102 +28,103 @@
           </button>
         </nav>
         <a class="page-header__logo">
-          <img class="main-nav__image" src="https://via.placeholder.com/102x83" width="102" height="83" alt="Логотип сайта Седона">
+          <img class="page-header__image" src="https://via.placeholder.com/102x83" width="102" height="83" alt="Логотип сайта Седона">
         </a>
       </div>
     </header>
 
     <main class="page-main">
-      <section class="welcome-image__inner">
+
+      <section class="welcome-promo welcome-promo--inner">
         <h1 class="visually-hidden">Welcome to the gorgeous Sedona</h1>
-        <img class="welcome-image__image--inner" src="https://via.placeholder.com/281x214" width="281" height="214" alt="Добро пожаловать в Седону">
+        <img class="welcome-promo__image welcome-promo__image--inner" src="img/text-sedona.svg" width="281" height="214" alt="Добро пожаловать в Седону">
       </section>
 
       <section class="gallery">
-        <div class="gallery__header">
-          <h2 class="gallery__title">Фото и видео</h2>
-          <p class="gallery__description">
+        <div class="text-info">
+          <h2 class="text-info__title page-title">Фото и видео</h2>
+          <p class="text-info__text page-text">
             Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.
           </p>
         </div>
-        <div class="post-wrapper">
-          <figure class="post">
-            <a class="post__link" href="#">
-              <img class="post__image" src="https://via.placeholder.com/280x280" width="280" height="280" alt="Неродные просторы">
-            </a>
-            <figcaption>
-              <h3 class="post__title">Неродные просторы</h3>
-              <p class="post__description">Автор фото: Борис</p>
-              <button class="post__button" type="button" aria-label="Кнопка мне нравится">
-                <img src="https://via.placeholder.com/23x21" width="23" height="21">
+
+        <ul class="gallery__list">
+          <li class="post gallery__item">
+            <figure>
+              <a class="post__link" href="#">
+                <img class="post__image" src="img/photo-sunset-mobile@1x.jpg" width="280" height="280" alt="Неродные просторы">
+              </a>
+              <figcaption>
+                <h3 class="post__title">Неродные просторы</h3>
+                <p class="post__description">Автор фото: Борис</p>
                 <span class="post__likes">1350</span>
-              </button>
-            </figcaption>
-          </figure>
-          <figure class="post">
-            <a class="post__link" href="#">
-              <img class="post__image" src="https://via.placeholder.com/280x280" width="280" height="280" alt="Неродные просторы">
-            </a>
-            <figcaption>
-              <h3 class="post__title">Местная растительность</h3>
-              <p class="post__description">Автор фото: Сергей</p>
-              <button class="post__button" type="button" aria-label="Кнопка мне нравится">
-                <img src="https://via.placeholder.com/23x21" width="23" height="21">
+              </figcaption>
+            </figure>
+          </li>
+
+          <li class="post gallery__item">
+            <figure>
+              <a class="post__link" href="#">
+                <img class="post__image" src="img/photo-cactus-mobile@1x.jpg" width="280" height="280" alt="Неродные просторы">
+              </a>
+              <figcaption>
+                <h3 class="post__title">Местная растительность</h3>
+                <p class="post__description">Автор фото: Сергей</p>
                 <span class="post__likes">143</span>
-              </button>
-            </figcaption>
-          </figure>
-          <figure class="post">
-            <a class="post__link" href="#">
-              <img class="post__image" src="https://via.placeholder.com/280x280" width="280" height="280" alt="Неродные просторы">
-            </a>
-            <figcaption>
-              <h3 class="post__title">Дорога на север</h3>
-              <p class="post__description">Автор фото: Петр</p>
-              <button class="post__button" type="button" aria-label="Кнопка мне нравится">
-                <img src="https://via.placeholder.com/23x21" width="23" height="21">
+              </figcaption>
+            </figure>
+          </li>
+
+          <li class="post gallery__item">
+            <figure>
+              <a class="post__link" href="#">
+                <img class="post__image" src="img/photo-roads-mobile@1x.jpg" width="280" height="280" alt="Неродные просторы">
+              </a>
+              <figcaption>
+                <h3 class="post__title">Дорога на север</h3>
+                <p class="post__description">Автор фото: Петр</p>
                 <span class="post__likes">96</span>
-              </button>
-            </figcaption>
-          </figure>
-          <figure class="post">
-            <a class="post__link" href="#">
-              <img class="post__image" src="https://via.placeholder.com/280x280" width="280" height="280" alt="Неродные просторы">
-            </a>
-            <figcaption>
-              <h3 class="post__title">Мост дьявола</h3>
-              <p class="post__description">Автор фото: Антон</p>
-              <button class="post__button" type="button" aria-label="Кнопка мне нравится">
-                <img src="https://via.placeholder.com/23x21" width="23" height="21">
+              </figcaption>
+            </figure>
+          </li>
+
+          <li class="post gallery__item">
+            <figure>
+              <a class="post__link" href="#">
+                <img class="post__image" src="img/photo-bridge-mobile@1x.jpg" width="280" height="280" alt="Неродные просторы">
+              </a>
+              <figcaption>
+                <h3 class="post__title">Мост дьявола</h3>
+                <p class="post__description">Автор фото: Антон</p>
                 <span class="post__likes">254</span>
-              </button>
-            </figcaption>
-          </figure>
-        </div>
+              </figcaption>
+            </figure>
+          </li>
+        </ul>
       </section>
 
-      <section class="presentation">
-        <div class="presentation-header">
-          <h2 class="presentation__title">Все еще сомневаетесь?</h2>
-          <p class="presentation__description">
+      <section class="video-player">
+        <div class="text-info">
+          <h2 class="text-info__title page-title">Все еще сомневаетесь?</h2>
+          <p class="text-info__text page-text">
             Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
           </p>
         </div>
         <div class="player">
-          <img class="player__image" src="https://via.placeholder.com/320x201" width="320" height="201" alt="Видеопрезентация туристического города Седона">
-          <div class="range-control">
-            <div class="scale"></div>
-            <div class="toggle"></div>
+          <img class="player__image" src="img/video-mobile@1x.jpg" width="320" height="201" alt="Видеопрезентация туристического города Седона">
+          <div class="player__range range-control">
+            <div class="range-control__scale"></div>
+            <div class="range-control__toggle"></div>
           </div>
-          <div class="buttons-block">
-            <button class="player__button" type="button" aria-label="Проиграть видео еще раз">
-              <img class="player__icon" src="https://via.placeholder.com/16x20" width="16" height="20">
+          <div class="player__buttons-block buttons-block">
+            <button class="buttons-block__button" type="button" aria-label="Проиграть видео еще раз">
+              <img class="buttons-block__icon" src="https://via.placeholder.com/16x20" width="16" height="20">
             </button>
-            <button class="player__button" type="button" aria-label="Включить субтитры">
-              <img class="player__icon" src="https://via.placeholder.com/32x20" width="32" height="20">
+            <button class="buttons-block__button" type="button" aria-label="Включить субтитры">
+              <img class="buttons-block__icon" src="https://via.placeholder.com/32x20" width="32" height="20">
             </button>
-            <button class="player__button" type="button" aria-label="Развернуть видео во весь экран">
-              <img class="player__icon" src="https://via.placeholder.com/20x20" width="20" height="20">
+            <button class="buttons-block__button" type="button" aria-label="Развернуть видео во весь экран">
+              <img class="buttons-block__icon" src="https://via.placeholder.com/20x20" width="20" height="20">
             </button>
           </div>
       </section>

@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link href="css/style.css" rel="stylesheet">
     <title>HTML Academy: Седона</title>
   </head>
   <body>
@@ -33,84 +34,91 @@
     </header>
 
     <main class="page-main">
-      <section class="welcome-image__inner">
+
+      <section class="welcome-promo welcome-promo__inner">
         <h1 class="visually-hidden">Welcome to the gorgeous Sedona</h1>
-        <img class="welcome-image__image--inner" src="https://via.placeholder.com/281x214" width="281" height="214" alt="Добро пожаловать в Седону">
+        <img class="welcome-promo__image welcome-promo__image--inner" src="img/text-sedona.svg" width="281" height="214" alt="Добро пожаловать в Седону">
       </section>
 
-      <section class="feedback">
-        <h2 class="feedback__title">Оставьте свой отзыв</h2>
-        <p class="feedback__description">
+      <section class="text-info">
+        <h2 class="text-info__title page-title">Оставьте свой отзыв</h2>
+        <p class="text-info__text page-text">
           Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
         </p>
       </section>
 
-      <section class="feedback-form filter">
+      <section class="feedback-form">
         <h2 class="visually-hidden">Форма для отправки отзыва</h2>
-        <form class="filter__form" action="http://echo.htmlacademy.ru" method="get">
-          <fieldset class="filter__fieldset">
-            <legend class="filter__title">Представьтесь:</legend>
-            <label class="filter__label">Имя<sup>*</sup>:
-              <input class="field-text filter__personal" type="text" name="name" placeholder="Петр">
+        <form class="form" action="http://echo.htmlacademy.ru" method="get">
+          <fieldset class="form__fieldset">
+            <legend class="form__title">Представьтесь:</legend>
+            <label class="input form__row">
+              Имя*:
+              <input class="input__field" type="text" name="name" placeholder="Петр">
             </label>
-            <label class="filter__label">Фамилия<sup>*</sup>:
-              <input class="field-text filter__personal" type="text" name="surname" placeholder="Иванов">
+
+            <label class="input form__row">
+              Фамилия*:
+              <input class="input__field" type="text" name="surname" placeholder="Иванов">
             </label>
-            <label class="filter__label">Отчество:
-              <input class="field-text filter__personal" type="text" name="patronymic" placeholder="Александрович">
+
+            <label class="input form__row">
+              Отчество:
+              <input class="input__field" type="text" name="patronymic" placeholder="Александрович">
             </label>
           </fieldset>
 
-          <fieldset class="filter__fieldset">
-            <legend class="filter__title">Контактная информация:</legend>
-            <label class="filter__label">Контактный телефон<sup>*</sup>:
-              <input class="field-text filter__contacts" type="tel" name="phone" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Введите телефон">
+          <fieldset class="form__fieldset">
+            <legend class="form__title">Контактная информация:</legend>
+            <label class="input input--phone form__row">Контактный телефон*:
+              <input class="input__field" type="tel" name="phone" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Введите телефон">
               <span class="filter__contacts-icon">
               </span>
             </label>
-            <label class="filter__label">Электронная почта<sup>*</sup>:
-              <input class="field-text filter__contacts" type="email" name="email" placeholder="Введите e-mail">
+            <label class="input input-email form__row">Электронная почта*:
+              <input class="input__field" type="email" name="email" placeholder="Введите e-mail">
               <span class="filter__contacts-icon">
               </span>
             </label>
           </fieldset>
 
-          <fieldset class="filter__fieldset">
-            <legend class="filter__title">Ваше общее впечатление:</legend>
-            <label class="filter__label filter__label--radio">Скорее положительное
-              <input class="visually-hidden filter__radio" type="radio" name="impression" value="positive" checked>
+          <fieldset class="form__fieldset">
+            <legend class="form__title">Ваше общее впечатление:</legend>
+            <label class="radio form__row">Скорее положительное
+              <input class="visually-hidden" type="radio" name="impression" value="positive" checked>
             </label>
-            <label class="filter__label filter__label--radio">Скорее отрицательное
-              <input class="visually-hidden filter__radio" type="radio" name="impression" value="negative">
+
+            <label class="radio form__row">Скорее отрицательное
+              <input class="visually-hidden" type="radio" name="impression" value="negative">
             </label>
-            <label class="filter__label filter__label--radio">Затрудняюсь ответить
-              <input class="visually-hidden filter__radio" type="radio" name="impression" value="not-sure">
+
+            <label class="radio form__row">Затрудняюсь ответить
+              <input class="visually-hidden" type="radio" name="impression" value="not-sure">
             </label>
           </fieldset>
 
-          <fieldset class="filter__fieldset filter-checkbox">
-            <legend class="filter__title">Посещенные достопримечательности:</legend>
-            <label class="filter__label filter__label--checkbox">Мост Дьявола
-              <input class="visually-hidden filter__checkbox" type="checkbox" name="Devil's Bridge Trail" checked>
+          <fieldset class="form__fieldset">
+            <legend class="form__title">Посещенные достопримечательности:</legend>
+            <label class="checkbox form__row">Мост Дьявола
+              <input class="visually-hidden" type="checkbox" name="Devil's Bridge Trail" checked>
             </label>
-            <label class="filter__label filter__label--checkbox">Гора-Колокол
-              <input class="visually-hidden filter__checkbox" type="checkbox" name="Bell rock" checked>
+            <label class="checkbox form__row">Гора-Колокол
+              <input class="visually-hidden" type="checkbox" name="Bell rock" checked>
             </label>
-            <label class="filter__label filter__label--checkbox">Слайд-парк
-              <input class="visually-hidden filter__checkbox" type="checkbox" name="Slide Rock State Park" checked>
+            <label class="checkbox form__row">Слайд-парк
+              <input class="visually-hidden" type="checkbox" name="Slide Rock State Park" checked>
             </label>
-            <label class="filter__label filter__label--checkbox">Красные скалы
-              <input class="visually-hidden filter__checkbox" type="checkbox" name="Red rock">
+            <label class="checkbox form__row">Красные скалы
+              <input class="visually-hidden" type="checkbox" name="Red rock">
             </label>
           </fieldset>
-
-          <div class="filter__fieldset">
-            <label class="filter__title">Опишите свои эмоции:
-              <textarea class="filter__checkbox" placeholder="Опишите подробно все свои восторги"></textarea>
+          <div class="form__fieldset">
+            <label class="form__title">Опишите свои эмоции:
+              <textarea class="textarea" placeholder="Опишите подробно все свои восторги"></textarea>
             </label>
           </div>
 
-          <button class="button filter__button" type="submit">Отправить отзыв</button>
+          <button class="button form__button" type="submit">Отправить отзыв</button>
         </form>
       </section>
     </main>
