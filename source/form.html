@@ -53,31 +53,31 @@
 
         <form class="form" action="http://echo.htmlacademy.ru" method="get">
           <fieldset class="form__fieldset">
-            <legend class="form__title">Представьтесь:</legend>
-            <label class="input form__row">
+            <legend class="form__title page-title">Представьтесь:</legend>
+            <label class="input form__row form__text">
               Имя*:
               <input class="input__field" type="text" name="name" placeholder="Петр">
             </label>
 
-            <label class="input form__row">
+            <label class="input form__row form__text">
               Фамилия*:
               <input class="input__field" type="text" name="surname" placeholder="Иванов">
             </label>
 
-            <label class="input form__row">
+            <label class="input form__row form__text">
               Отчество:
               <input class="input__field" type="text" name="patronymic" placeholder="Александрович">
             </label>
           </fieldset>
 
           <fieldset class="form__fieldset">
-            <legend class="form__title">Контактная информация:</legend>
-            <label class="input input--phone form__row">Контактный телефон*:
+            <legend class="form__title page-title">Контактная информация:</legend>
+            <label class="input input--phone form__row form__text">Контактный телефон*:
               <input class="input__field" type="tel" name="phone" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Введите телефон">
               <span class="filter__contacts-icon">
               </span>
             </label>
-            <label class="input input-email form__row">Электронная почта*:
+            <label class="input input-email form__row form__text">Электронная почта*:
               <input class="input__field" type="email" name="email" placeholder="Введите e-mail">
               <span class="filter__contacts-icon">
               </span>
@@ -85,37 +85,37 @@
           </fieldset>
 
           <fieldset class="form__fieldset">
-            <legend class="form__title">Ваше общее впечатление:</legend>
-            <label class="radio form__row">Скорее положительное
+            <legend class="form__title page-title">Ваше общее впечатление:</legend>
+            <label class="radio form__row form__text">Скорее положительное
               <input class="visually-hidden" type="radio" name="impression" value="positive" checked>
             </label>
 
-            <label class="radio form__row">Скорее отрицательное
+            <label class="radio form__row form__text">Скорее отрицательное
               <input class="visually-hidden" type="radio" name="impression" value="negative">
             </label>
 
-            <label class="radio form__row">Затрудняюсь ответить
+            <label class="radio form__row form__text">Затрудняюсь ответить
               <input class="visually-hidden" type="radio" name="impression" value="not-sure">
             </label>
           </fieldset>
 
           <fieldset class="form__fieldset">
-            <legend class="form__title">Посещенные достопримечательности:</legend>
-            <label class="checkbox form__row">Мост Дьявола
+            <legend class="form__title page-title">Посещенные достопримечательности:</legend>
+            <label class="checkbox form__row form__text">Мост Дьявола
               <input class="visually-hidden" type="checkbox" name="Devil's Bridge Trail" checked>
             </label>
-            <label class="checkbox form__row">Гора-Колокол
+            <label class="checkbox form__row form__text">Гора-Колокол
               <input class="visually-hidden" type="checkbox" name="Bell rock" checked>
             </label>
-            <label class="checkbox form__row">Слайд-парк
+            <label class="checkbox form__row form__text">Слайд-парк
               <input class="visually-hidden" type="checkbox" name="Slide Rock State Park" checked>
             </label>
-            <label class="checkbox form__row">Красные скалы
+            <label class="checkbox form__row form__text">Красные скалы
               <input class="visually-hidden" type="checkbox" name="Red rock">
             </label>
           </fieldset>
-          <div class="form__fieldset">
-            <label class="form__title">Опишите свои эмоции:
+          <div class="form__fieldset form-textarea">
+            <label class="form__title form-textarea__title page-title">Опишите свои эмоции:
               <textarea class="textarea" placeholder="Опишите подробно все свои восторги"></textarea>
             </label>
           </div>
