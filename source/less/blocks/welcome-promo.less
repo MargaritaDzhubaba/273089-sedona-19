@@ -1,0 +1,39 @@
+.welcome-promo {
+  position: relative;
+  height: 389px;
+
+  background-color: @accent-color;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.welcome-promo::before {
+  content: "";
+
+  position: absolute;
+  bottom: 0;
+
+  height: 26px;
+  width: 320px;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../img/bg-intro-triangle-mobile.svg");
+}
+
+.welcome-promo--inner {
+  height: 158px;
+
+  background-color: @accent-color;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.welcome-promo__image {
+  width: 281px;
+  height: 214px;
+}
