@@ -12,16 +12,16 @@
         <nav class="main-nav">
           <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a class="main-nav__link" href="index.html">Главная</a>
+              <a class="button main-nav__link" href="index.html">Главная</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="photo.html">Фото и видео</a>
+              <a class="button main-nav__link" href="photo.html">Фото и видео</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link">Форма отзыва</a>
+              <a class="button main-nav__link">Форма отзыва</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="https://up.htmlacademy.ru/adaptive/18">HTML Academy</a>
+              <a class="button main-nav__link" href="https://up.htmlacademy.ru/adaptive/18">HTML Academy</a>
             </li>
           </ul>
           <button class="main-nav__toggle" type="button" aria-label="Открыть меню">
@@ -40,11 +40,11 @@
 
       <section class="welcome-promo welcome-promo--inner">
         <h1 class="visually-hidden">Welcome to the gorgeous Sedona</h1>
-        <img class="welcome-promo__image welcome-promo__image--inner" src="img/text-sedona.svg" width="281" height="214" alt="Добро пожаловать в Седону">
+        <img class="welcome-promo__image welcome-promo__image--inner" src="img/text-sedona.svg" width="230" height="40" alt="Добро пожаловать в Седону">
       </section>
 
       <section class="feedback-form">
-        <div class="feedback-form__info text-info">
+        <div class="text-info text-info--feedback-form">
           <h2 class="text-info__title page-title">Оставьте свой отзыв</h2>
           <p class="text-info__text page-text">
             Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
@@ -52,7 +52,7 @@
         </div>
 
         <form class="form" action="http://echo.htmlacademy.ru" method="get">
-          <fieldset class="form__fieldset">
+          <div class="form__fieldset">
             <legend class="form__title">Представьтесь:</legend>
             <label class="input form__row">
               <span class="form__text">Имя*:</span>
@@ -68,66 +68,66 @@
               <span class="form__text">Отчество:</span>
               <input class="input__field" type="text" name="patronymic" placeholder="Александрович">
             </label>
-          </fieldset>
+          </div>
 
-          <fieldset class="form__fieldset">
+          <div class="form__fieldset">
             <legend class="form__title">Контактная информация:</legend>
             <label class="input input--with-icon form__row">
-              <span class="form__text form__text--with-icon">Контактный телефон*:</span>
+              <span class="form__text">Контактный телефон*:</span>
               <input class="input__field" type="tel" name="phone" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Введите телефон">
-              <span class="input__icon"></span>
+              <span class="input__icon input__icon--phone"></span>
             </label>
             <label class="input input--with-icon form__row">
-              <span class="form__text form__text--with-icon">Электронная почта*:</span>
+              <span class="form__text">Электронная почта*:</span>
               <input class="input__field" type="email" name="email" placeholder="Введите e-mail">
-              <span class="input__icon"></span>
+              <span class="input__icon input__icon--email"></span>
             </label>
-          </fieldset>
+          </div>
 
-          <fieldset class="form__fieldset">
+          <div class="form__fieldset">
             <legend class="form__title">Ваше общее впечатление:</legend>
             <label class="radio form__row">
-              <span class="form__text">Скорее положительное</span>
-              <input class="visually-hidden" type="radio" id="impression-positive" name="impression" value="positive" checked>
-              <label for="impression-positive"></label>
+              <input class="radio__input visually-hidden" type="radio" id="impression-positive" name="impression" value="positive" checked disabled>
+              <label class="radio__label" for="impression-positive"></label>
+              <span class="radio__text">Скорее положительное</span>
             </label>
 
             <label class="radio form__row">
-              <span class="form__text">Скорее отрицательное</span>
-              <input class="visually-hidden" type="radio" id="impression-negative" name="impression" value="negative">
-              <label for="impression-negative"></label>
+              <input class="radio__input visually-hidden" type="radio" id="impression-negative" name="impression" value="negative">
+              <label class="radio__label" for="impression-negative"></label>
+              <span class="radio__text">Скорее отрицательное</span>
             </label>
 
             <label class="radio form__row">
-              <span class="form__text">Затрудняюсь ответить</span>
-              <input class="visually-hidden" type="radio" id="impression-not-sure" name="impression" value="not-sure">
-              <label for="impression-not-sure"></label>
+              <input class="radio__input visually-hidden" type="radio" id="impression-not-sure" name="impression" value="not-sure">
+              <label class="radio__label" for="impression-not-sure"></label>
+              <span class="radio__text">Затрудняюсь ответить</span>
             </label>
-          </fieldset>
+          </div>
 
-          <fieldset class="form__fieldset">
+          <div class="form__fieldset">
             <legend class="form__title">Посещенные достопримечательности:</legend>
             <label class="checkbox form__row">
-              <span class="form__text">Мост Дьявола</span>
-              <input class="visually-hidden" type="checkbox" id="checkbox-bridge" name="Devil's Bridge Trail" checked>
-              <label for="checkbox-bridge"></label>
+              <input class="checkbox__input visually-hidden" type="checkbox" id="checkbox-bridge" name="Devil's Bridge Trail" checked disabled>
+              <label class="checkbox__label" for="checkbox-bridge"></label>
+              <span class="checkbox__text">Мост Дьявола</span>
             </label>
             <label class="checkbox form__row">
-              <span class="form__text">Гора-Колокол</span>
-              <input class="visually-hidden" type="checkbox" id="checkbox-bell-rock" name="Bell rock" checked>
-              <label for="checkbox-bell-rock"></label>
+              <input class="checkbox__input visually-hidden" type="checkbox" id="checkbox-bell-rock" name="Bell rock" checked>
+              <label class="checkbox__label" for="checkbox-bell-rock"></label>
+              <span class="checkbox__text">Гора-Колокол</span>
             </label>
             <label class="checkbox form__row">
-              <span class="form__text">Слайд-парк</span>
-              <input class="visually-hidden" type="checkbox" id="checkbox-slide-rock" name="Slide Rock State Park" checked>
-              <label for="checkbox-slide-rock"></label>
+              <input class="checkbox__input visually-hidden" type="checkbox" id="checkbox-slide-rock" name="Slide Rock State Park" checked>
+              <label class="checkbox__label" for="checkbox-slide-rock"></label>
+              <span class="checkbox__text">Слайд-парк</span>
             </label>
             <label class="checkbox form__row">
-              <span class="form__text">Красные скалы</span>
-              <input class="visually-hidden" type="checkbox" id="checkbox-red-rock" name="Red rock">
-              <label for="checkbox-red-rock"></label>
+              <input class="checkbox__input visually-hidden" type="checkbox" id="checkbox-red-rock" name="Red rock">
+              <label class="checkbox__label" for="checkbox-red-rock"></label>
+              <span class="checkbox__text">Красные скалы</span>
             </label>
-          </fieldset>
+          </div>
           <div class="form__fieldset form-textarea">
             <label class="form__title form-textarea__title">Опишите свои эмоции:
               <textarea class="textarea" placeholder="Опишите подробно все свои восторги"></textarea>

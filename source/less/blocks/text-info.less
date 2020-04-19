@@ -1,11 +1,21 @@
 .text-info {
-  padding-top: 43px;
+  position: relative;
+
+  padding-top: 41px;
   padding-left: @mobilPadding;
   padding-right: @mobilPadding;
-  padding-bottom: 32px;
+  padding-bottom: 40px;
 
   text-align: center;
 }
+
+// .text-info__title {
+//   margin-bottom: 26px;
+// }
+
+// .text-info__text {
+//   line-height: 24px;
+// }
 
 // .text-info__title {
 //   margin-top: 0;
@@ -27,9 +37,15 @@
 // }
 
 .text-info--index {
-  position: relative;
+  padding-bottom: 42px;
 
-  padding-bottom: 47px;
+  .text-info__title {
+    margin-bottom: 27px;
+  }
+
+  .text-info__text {
+    line-height: 26px;
+  }
 }
 
 .text-info--index::before {
@@ -49,13 +65,10 @@
   background-image: url("../../img/bg-triangle.svg");
 }
 
-.text-info__text--index{
-  line-height: 26px;
-}
-
 .text-info--blue {
   background-color: @accent-color;
   color: @main-color;
+  padding-top: 40px;
 
   .text-info__title {
     color: @main-color;
@@ -63,10 +76,49 @@
 }
 
 .text-info--grey {
-  padding-top: 26px;
+  padding-top: 27px;
   padding-bottom: 0;
 
   text-align: left;
 
   background-color: #f2f2f2;
+}
+
+.text-info--gallery {
+  padding-top: 39px;
+  padding-bottom: 26px;
+
+  .text-info__title {
+    margin-bottom: 26px;
+  }
+
+  .text-info__text {
+    line-height: 24px;
+  }
+}
+
+.text-info--video-player {
+  padding-top: 35px;
+  padding-bottom: 33px;
+
+  .text-info__title {
+    margin-bottom: 26px;
+  }
+
+  .text-info__text {
+    line-height: 24px;
+  }
+}
+
+.text-info--feedback-form {
+  padding-top: 39px;
+  padding-bottom: 15px;
+
+  .text-info__title {
+    margin-bottom: 26px;
+  }
+
+  .text-info__text {
+    line-height: 24px;
+  }
 }

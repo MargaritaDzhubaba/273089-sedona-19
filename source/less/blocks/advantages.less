@@ -1,20 +1,27 @@
 .advantages {
+  display: flex;
+  flex-direction: column;
+
   .list-reset();
 }
 
 .advantages__item {
   position: relative;
 
-  padding-top: 10px;
-  padding-left: 70px;
+  padding-top: 11px;
+  padding-left: 50px;
   padding-right: @mobilPadding;
   padding-bottom: 18px;
+
+  .text-info__title {
+    margin-bottom: 13px;
+  }
 }
 
 .advantages__icon {
   position: absolute;
   top: 0;
-  left: 20px;
+  left: 0;
 
   fill: @accent-color;
 }

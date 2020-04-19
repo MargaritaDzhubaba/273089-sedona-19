@@ -21,6 +21,20 @@
   height: 48px;
 
   background-color: @accent-color;
+
+  cursor: pointer;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+
+    .social-networks__icon {
+      fill: fade(@main-color, 30%);
+    }
+  }
 }
 
 .social-networks__icon {
