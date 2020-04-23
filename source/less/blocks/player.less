@@ -2,6 +2,20 @@
   position: relative;
 }
 
+@media (min-width: @tablet-width) {
+  .player {
+    padding-right: @tabletPadding;
+    padding-left: @tabletPadding;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .player {
+    padding-right: 200px;
+    padding-left: 200px;
+  }
+}
+
 .player__image {
   width: 100%;
   height: 201px;
@@ -11,9 +25,23 @@
   object-fit: cover;
 }
 
+@media (min-width: @tablet-width) {
+  .player__image {
+    height: 500px;
+  }
+}
+
 .player__wrapper {
+  position: relative;
+
   padding-right: @mobilPadding;
   padding-left: @mobilPadding;
+}
+
+@media (min-width: @tablet-width) {
+  .player__wrapper {
+    padding: 0;
+  }
 }
 
 .player__range {

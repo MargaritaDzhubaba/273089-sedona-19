@@ -6,6 +6,19 @@
   background-color: rgba(0, 0, 0, 0.6);
 }
 
+@media (min-width: @tablet-width) {
+  .range-control {
+    position: absolute;
+    bottom: 0;
+
+    height: 93px;
+    padding-top: 45px;
+    padding-left: 93px;
+    padding-right: 166px;
+    padding-bottom: 45px;
+  }
+}
+
 .range-control__scale {
   width: 100%;
   height: 3px;
@@ -22,4 +35,11 @@
   background-color: @main-color;
 
   border-radius: 50%;
+}
+
+@media (min-width: @tablet-width) {
+  .range-control__toggle {
+    top: 42px;
+    left: 206px;
+  }
 }

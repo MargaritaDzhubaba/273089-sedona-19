@@ -9,33 +9,6 @@
   text-align: center;
 }
 
-// .text-info__title {
-//   margin-bottom: 26px;
-// }
-
-// .text-info__text {
-//   line-height: 24px;
-// }
-
-// .text-info__title {
-//   margin-top: 0;
-//   margin-bottom: 9px;
-
-//   font-size: 18px;
-//   line-height: 26px;
-
-//   color: @text-color;
-// }
-
-// .text-info__number {
-//   display: block;
-//   margin-bottom: 15px;
-// }
-
-// .text-info__text {
-//   margin: 0;
-// }
-
 .text-info--index {
   padding-bottom: 42px;
 
@@ -65,6 +38,33 @@
   background-image: url("../img/bg-triangle.svg");
 }
 
+@media (min-width: @tablet-width) {
+  .text-info--index {
+    padding-top: 51px;
+    padding-bottom: 50px;
+    padding-left: @tabletPadding;
+    padding-right: @tabletPadding;
+  }
+
+  .text-info__title {
+    font-size: 21px;
+    margin-bottom: 30px;
+  }
+
+  .text-info--index::before {
+    content: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .text-info--index {
+    padding-top: 51px;
+    padding-bottom: 50px;
+    padding-left: 350px;
+    padding-right: 350px;
+  }
+}
+
 .text-info--blue {
   background-color: @accent-color;
   color: @main-color;
@@ -72,6 +72,30 @@
 
   .text-info__title {
     color: @main-color;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .text-info--blue {
+    width: 33.3%;
+    padding: 45px;
+
+    .text-info__title {
+      font-size: 21px;
+      margin-bottom: 9px;
+    }
+
+    .text-info__number {
+      margin-bottom: 21px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .text-info--blue {
+    padding: 53px;
+    padding-left: 60px;
+    padding-right: 60px;
   }
 }
 
@@ -97,6 +121,29 @@
   }
 }
 
+@media (min-width: @tablet-width) {
+  .text-info--gallery {
+    padding-top: 76px;
+    padding-left: 170px;
+    padding-right: 170px;
+    padding-bottom: 68px;
+
+    .text-info__title {
+      font-size: 30px;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .text-info--gallery {
+    padding-top: 112px;
+    padding-left: 350px;
+    padding-right: 350px;
+    padding-bottom: 70px;
+  }
+}
+
 .text-info--video-player {
   padding-top: 35px;
   padding-bottom: 33px;
@@ -107,6 +154,29 @@
 
   .text-info__text {
     line-height: 24px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .text-info--video-player {
+    padding-top: 68px;
+    padding-left: 170px;
+    padding-right: 170px;
+    padding-bottom: 72px;
+
+    .text-info__title {
+      font-size: 30px;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .text-info--video-player {
+    padding-top: 72px;
+    padding-left: 350px;
+    padding-right: 350px;
+    padding-bottom: 70px;
   }
 }
 

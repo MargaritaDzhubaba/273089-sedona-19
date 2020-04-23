@@ -1,6 +1,7 @@
-.main-nav {
-  display: flex;
-  flex-direction: column;
+@media (min-width: @tablet-width) {
+  .main-nav {
+    height: 56px;
+  }
 }
 
 .main-nav__list {
@@ -10,8 +11,29 @@
   .list-reset();
 }
 
+@media (min-width: @tablet-width) {
+  .main-nav__list {
+    flex-direction: row;
+  }
+}
+
 .main-nav__item {
   box-shadow: 0 -1px 0 0 rgba(1, 1, 1, 0.2);
+}
+
+.main-nav__item:first-child {
+  box-shadow: none;
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav__item {
+    width: 20%;
+    box-shadow: none;
+  }
+
+  .main-nav__item:nth-child(2) {
+    margin-right: auto;
+  }
 }
 
 .main-nav__link {
@@ -31,14 +53,66 @@
   color: @main-color;
 
   box-shadow: inset 0 1px 0 0 fade(@main-color, 20%);
-}
 
-.main-nav__item:first-child {
-  box-shadow: none;
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    color: fade(@main-color, 30%);
+    background-color: #5496bd;
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+  }
 }
 
 .main-nav__item:last-child .main-nav__link {
   padding-bottom: 6px;
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav__link {
+    min-height: 56px;
+    padding-top: 15px;
+    padding-bottom: 7px;
+
+    font-size: 14px;
+    line-height: 26px;
+
+    background-color: @main-color;
+    color: @text-color;
+
+    box-shadow: none;
+  }
+
+  .main-nav__link:hover {
+    color: @accent-color;
+    background-color: white;
+  }
+
+  .main-nav__link:active {
+    color: @accent-color;
+    background-color: white;
+  }
+
+  .main-nav__link:disabled {
+    color: fade(@text-color, 30%);
+  }
+
+  .main-nav__link--active {
+    color: #766357;
+  }
+
+  .main-nav__link--active:hover {
+    color: #604e43;
+    background-color: @main-color;
+  }
+
+  .main-nav__link--active:disabled {
+    color: rgba(118, 99, 87, 0.3);
+  }
 }
 
 .main-nav__image {
@@ -50,6 +124,12 @@
   width: 102px;
 
   transform: translateX(-50%);
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav__image {
+    top: 0;
+  }
 }
 
 .main-nav__toggle {
@@ -65,6 +145,12 @@
 
   background: none;
   border: none;
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav__toggle {
+    display: none;
+  }
 }
 
 .main-nav__icon {
