@@ -17,6 +17,20 @@
   margin-bottom: 0;
 }
 
+@media (min-width: @tablet-width) {
+  .checkbox {
+    width: 210px;
+    margin-bottom: 33px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .checkbox {
+    width: auto;
+    margin-bottom: 33px;
+  }
+}
+
 .checkbox__text {
   font-size: 18px;
   line-height: 26px;
@@ -33,7 +47,7 @@
   margin-right: 25px;
 
   background: @form-color;
-  border-radius: 15%;
+  border-radius: 10%;
 }
 
 .checkbox__input:checked + .checkbox__label::before {

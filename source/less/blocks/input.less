@@ -29,8 +29,41 @@
   }
 }
 
+@media (min-width: @tablet-width) {
+  .input--with-icon {
+    margin-bottom: 25px;
+
+    .form__text {
+      margin-bottom: 8px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .input--with-icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: baseline;
+
+    width: 50%;
+    margin-bottom: 0;
+
+    .form__text {
+      padding: 0;
+      margin-bottom: 9px;
+    }
+
+    .input__field {
+      width: 316px;
+    }
+  }
+}
+
 .input__field {
   width: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
   padding: 16px 20px;
 
   font-family: inherit;
@@ -65,6 +98,12 @@
   height: 57px;
 
   background-color: #e6e6e6;
+}
+
+@media (min-width: @desktop-width) {
+  .input__icon {
+    top: 0;
+  }
 }
 
 .input__icon--phone {

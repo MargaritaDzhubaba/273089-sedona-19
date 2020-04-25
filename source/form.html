@@ -52,7 +52,7 @@
         </div>
 
         <form class="form" action="http://echo.htmlacademy.ru" method="get">
-          <div class="form__fieldset">
+          <div class="form__fieldset form__fieldset--personal-data">
             <legend class="form__title">Представьтесь:</legend>
             <label class="input form__row">
               <span class="form__text">Имя*:</span>
@@ -70,21 +70,23 @@
             </label>
           </div>
 
-          <div class="form__fieldset">
+          <div class="form__fieldset form__fieldset--contacts">
             <legend class="form__title">Контактная информация:</legend>
-            <label class="input input--with-icon form__row">
-              <span class="form__text">Контактный телефон*:</span>
-              <input class="input__field" type="tel" name="phone" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Введите телефон">
-              <span class="input__icon input__icon--phone"></span>
-            </label>
-            <label class="input input--with-icon form__row">
-              <span class="form__text">Электронная почта*:</span>
-              <input class="input__field" type="email" name="email" placeholder="Введите e-mail">
-              <span class="input__icon input__icon--email"></span>
-            </label>
+            <div class="form__wrapper--contacts">
+              <label class="input input--with-icon form__row">
+                <span class="form__text">Контактный телефон*:</span>
+                <input class="input__field" type="tel" name="phone" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Введите телефон">
+                <span class="input__icon input__icon--phone"></span>
+              </label>
+              <label class="input input--with-icon form__row">
+                <span class="form__text">Электронная почта*:</span>
+                <input class="input__field" type="email" name="email" placeholder="Введите e-mail">
+                <span class="input__icon input__icon--email"></span>
+              </label>
+            </div>
           </div>
 
-          <div class="form__fieldset">
+          <div class="form__fieldset form__fieldset--radio">
             <legend class="form__title">Ваше общее впечатление:</legend>
             <label class="radio form__row">
               <input class="radio__input visually-hidden" type="radio" id="impression-positive" name="impression" value="positive" checked disabled>
@@ -105,38 +107,40 @@
             </label>
           </div>
 
-          <div class="form__fieldset">
-            <legend class="form__title">Посещенные достопримечательности:</legend>
-            <label class="checkbox form__row">
-              <input class="checkbox__input visually-hidden" type="checkbox" id="checkbox-bridge" name="Devil's Bridge Trail" checked disabled>
-              <label class="checkbox__label" for="checkbox-bridge"></label>
-              <span class="checkbox__text">Мост Дьявола</span>
-            </label>
-            <label class="checkbox form__row">
-              <input class="checkbox__input visually-hidden" type="checkbox" id="checkbox-bell-rock" name="Bell rock" checked>
-              <label class="checkbox__label" for="checkbox-bell-rock"></label>
-              <span class="checkbox__text">Гора-Колокол</span>
-            </label>
-            <label class="checkbox form__row">
-              <input class="checkbox__input visually-hidden" type="checkbox" id="checkbox-slide-rock" name="Slide Rock State Park" checked>
-              <label class="checkbox__label" for="checkbox-slide-rock"></label>
-              <span class="checkbox__text">Слайд-парк</span>
-            </label>
-            <label class="checkbox form__row">
-              <input class="checkbox__input visually-hidden" type="checkbox" id="checkbox-red-rock" name="Red rock">
-              <label class="checkbox__label" for="checkbox-red-rock"></label>
-              <span class="checkbox__text">Красные скалы</span>
-            </label>
+          <div class="form__fieldset form__fieldset--checkbox">
+            <legend class="form__title">Посещенные<br> достопримечательности:</legend>
+            <div class="form__wrapper--checkbox">
+              <label class="checkbox form__row">
+                <input class="checkbox__input visually-hidden" type="checkbox" id="checkbox-bridge" name="Devil's Bridge Trail" checked disabled>
+                <label class="checkbox__label" for="checkbox-bridge"></label>
+                <span class="checkbox__text">Мост Дьявола</span>
+              </label>
+              <label class="checkbox form__row">
+                <input class="checkbox__input visually-hidden" type="checkbox" id="checkbox-bell-rock" name="Bell rock" checked>
+                <label class="checkbox__label" for="checkbox-bell-rock"></label>
+                <span class="checkbox__text">Гора-Колокол</span>
+              </label>
+              <label class="checkbox form__row">
+                <input class="checkbox__input visually-hidden" type="checkbox" id="checkbox-slide-rock" name="Slide Rock State Park" checked>
+                <label class="checkbox__label" for="checkbox-slide-rock"></label>
+                <span class="checkbox__text">Слайд-парк</span>
+              </label>
+              <label class="checkbox form__row">
+                <input class="checkbox__input visually-hidden" type="checkbox" id="checkbox-red-rock" name="Red rock">
+                <label class="checkbox__label" for="checkbox-red-rock"></label>
+                <span class="checkbox__text">Красные скалы</span>
+              </label>
+            </div>
           </div>
-          <div class="form__fieldset form-textarea">
-            <label class="form__title form-textarea__title">Опишите свои эмоции:
+          <div class="form__fieldset form__fieldset--textarea">
+              <span class="form__title">Опишите свои эмоции:</span>
               <textarea class="textarea" placeholder="Опишите подробно все свои восторги"></textarea>
             </label>
           </div>
 
-          <div class="form__wrapper">
+          <div class="form__wrapper--submit">
             <button class="button form__button" type="submit">Отправить отзыв</button>
-            <small class="form__footnote">* — обязательные поля</small>
+            <span class="form__footnote">* — обязательные поля</span>
           </div>
         </form>
       </section>

@@ -17,6 +17,12 @@
   margin-bottom: 0;
 }
 
+@media (min-width: @tablet-width) {
+  .radio {
+    margin-bottom: 23px;
+  }
+}
+
 .radio__text {
   font-size: 18px;
   line-height: 26px;
@@ -34,6 +40,12 @@
 
   background: @form-color;
   border-radius: 50%;
+}
+
+@media (min-width: @tablet-width) {
+  .radio__input + .radio__label {
+    margin-right: 21px;
+  }
 }
 
 .radio__input:checked + .radio__label::before {

@@ -2,6 +2,19 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  width: 100%;
+}
+
+@media (min-width: @tablet-width) {
+  .form {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+
+    width: 100%;
+    padding: 0;
+  }
 }
 
 .form__fieldset {
@@ -32,6 +45,17 @@
   background: #eeeeee;
 }
 
+@media (min-width: @tablet-width) {
+  .form__fieldset {
+    padding: 0 @tabletPadding;
+    margin-bottom: 60px;
+  }
+
+  .form__fieldset::before {
+    content: none;
+  }
+}
+
 .form__title {
   margin-top: 0;
   margin-bottom: 20px;
@@ -45,6 +69,14 @@
   color: @text-color;
 }
 
+@media (min-width: @tablet-width) {
+  .form__title {
+    margin-bottom: 58px;
+
+    font-size: 21px;
+  }
+}
+
 .form__text {
   margin: 0;
   margin-right: 15px;
@@ -55,7 +87,142 @@
   color: @text-color-muted;
 }
 
-.form__wrapper {
+@media (min-width: @tablet-width) {
+  .form__fieldset--personal-data {
+    align-items: stretch;
+
+    width: 50%;
+    margin-bottom: 69px;
+
+    .form__title {
+      align-self: start;
+    }
+  }
+
+  .form__fieldset--personal-data::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    height: 100%;
+    width: 1px;
+
+    background: #eeeeee;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .form__fieldset--contacts {
+    margin-bottom: 54px;
+
+    .form__title {
+      margin-bottom: 25px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form__fieldset--personal-data {
+    align-items: stretch;
+
+    padding-left: 80px;
+    padding-right: 120px;
+
+    margin-bottom: 67px;
+
+    .form__title {
+      align-self: start;
+    }
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .form__fieldset--contacts {
+    margin-bottom: 54px;
+    padding: 0 120px;
+
+    .form__title {
+      margin-bottom: 73px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form__wrapper--contacts {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .form__fieldset--radio {
+    position: relative;
+
+    align-items: start;
+    order: -1;
+
+    width: 50%;
+
+    padding-right: 48px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form__fieldset--radio {
+    align-items: stretch;
+
+    padding-left: 124px;
+    padding-right: 55px;
+
+    .form__title {
+      align-self: center;
+    }
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .form__fieldset--checkbox {
+    align-items: center;
+    margin-bottom: 37px;
+
+    .form__title {
+      margin-bottom: 41px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form__fieldset--checkbox {
+    align-items: stretch;
+    padding: 0 120px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .form__wrapper--checkbox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: space-between;
+
+    padding: 0;
+    padding-left: 95px;
+    padding-right: 83px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form__wrapper--checkbox {
+    padding: 0;
+  }
+}
+
+.form__wrapper--submit {
   display: flex;
   width: 100%;
 
@@ -64,10 +231,70 @@
   padding-bottom: 40px;
 }
 
+@media (min-width: @tablet-width) {
+  .form__wrapper--submit {
+    align-items: center;
+    justify-content: space-between;
+
+    padding-left: @tabletPadding;
+    padding-right: @tabletPadding;
+    padding-bottom: 60px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form__wrapper--submit {
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-bottom: 66px;
+  }
+}
+
+.form__fieldset--textarea {
+  margin-bottom: 22px;
+  text-align: center;
+
+  .form__title {
+    display: block;
+    margin-bottom: 15px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .form__fieldset--textarea {
+    margin-bottom: 60px;
+
+    .form__title {
+      margin-bottom: 56px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form__fieldset--textarea {
+    padding-left: 120px;
+    padding-right: 120px;
+
+    margin-bottom: 58px;
+  }
+}
+
 .form__button {
   width: 100%;
 }
 
+@media (min-width: @tablet-width) {
+  .form__button {
+    width: 50%;
+  }
+}
+
 .form__footnote {
   display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .form__footnote {
+    display: block;
+  }
 }
