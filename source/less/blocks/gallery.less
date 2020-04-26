@@ -1,11 +1,30 @@
-.gallery-info {
-  padding-bottom: 27px;
-}
-
-.gallery-info__text {
-  line-height: 24px;
-}
-
 .gallery__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   .list-reset();
+}
+
+@media (min-width: @tablet-width) {
+  .gallery__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    padding: 0 @tabletPadding;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .gallery__list {
+    padding: 0;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .gallery__item {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+  }
 }

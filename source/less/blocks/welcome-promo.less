@@ -1,6 +1,13 @@
 .welcome-promo {
   position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   height: 389px;
+
+  text-align: center;
 
   background-color: @accent-color;
   background-image: url("../img/bg-back-mobile@1x.jpg");
@@ -14,6 +21,8 @@
 
   position: absolute;
   bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
 
   height: 26px;
   width: 320px;
@@ -21,6 +30,27 @@
   background-position: center;
   background-repeat: no-repeat;
   background-image: url("../img/bg-intro-triangle-mobile.svg");
+}
+
+@media (min-width: @tablet-width) {
+  .welcome-promo {
+    height: 518px;
+  }
+
+  .welcome-promo::before {
+    height: 57px;
+    width: 768px;
+
+    background-image: url("../img/bg-intro-triangle-tablet.svg");
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .welcome-promo::before {
+    width: 1200px;
+
+    background-image: url("../img/bg-intro-triangle-desktop.svg");
+  }
 }
 
 .welcome-promo--inner {
@@ -33,7 +63,14 @@
   background-repeat: no-repeat;
 }
 
-.welcome-promo__image {
-  width: 281px;
-  height: 214px;
+@media (min-width: @tablet-width) {
+  .welcome-promo--inner {
+    height: 290px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .welcome-promo--inner {
+    height: 302px;
+  }
 }

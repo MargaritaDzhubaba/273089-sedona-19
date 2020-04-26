@@ -8,17 +8,39 @@
   margin-bottom: 27px;
 }
 
+@media (min-width: @tablet-width) {
+  .social-networks {
+    margin: 0;
+  }
+}
+
 .social-networks__item:not(:last-child) {
   margin-right: 6px;
 }
 
 .social-networks__link {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   width: 46px;
   height: 48px;
 
   background-color: @accent-color;
+
+  cursor: pointer;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+
+    .social-networks__icon {
+      fill: fade(@main-color, 30%);
+    }
+  }
 }
 
 .social-networks__icon {

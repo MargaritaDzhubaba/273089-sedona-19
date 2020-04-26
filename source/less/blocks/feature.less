@@ -1,21 +1,24 @@
-.feature__info {
-  padding-top: 39px;
-  padding-right: 28px;
-  padding-bottom: 40px;
-  padding-left: 28px;
+.feature {
+  display: flex;
+  flex-direction: column;
 }
 
-.feature__title {
-  margin-bottom: 9px;
+@media (min-width: @tablet-width) {
+  .feature {
+    flex-direction: row;
+  }
 }
 
-.feature__number {
-  display: block;
-  margin-bottom: 15px;
-}
+@media (min-width: @tablet-width) {
+  .feature--reverse {
+    .text-info {
+      order: 2;
+    }
 
-.feature__text {
-  line-height: 21px;
+    .feature__image {
+      order: 1;
+    }
+  }
 }
 
 .feature__image {
@@ -25,4 +28,11 @@
   vertical-align: top;
 
   object-fit: cover;
+}
+
+@media (min-width: @tablet-width) {
+  .feature__image {
+    width: 66.6%;
+    height: 256px;
+  }
 }

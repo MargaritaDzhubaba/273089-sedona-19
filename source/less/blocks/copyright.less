@@ -1,5 +1,6 @@
 .copyright {
-  text-align: center;
+  display: flex;
+  align-items: center;
 }
 
 .copyright__author {
@@ -9,8 +10,17 @@
 }
 
 .copyright__icon {
-  width: 27px;
+  display: block;
+
   height: 34px;
 
   fill: @text-color;
+}
+
+.copyright__link:disabled .copyright__icon {
+  fill: @accent-color;
+}
+
+.copyright__link:hover .copyright__icon {
+  fill: @accent-color;
 }

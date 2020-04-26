@@ -1,0 +1,80 @@
+.checkbox {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 25px;
+
+  cursor: pointer;
+
+  .form__title {
+    margin-bottom: 17px;
+  }
+}
+
+.checkbox:last-child {
+  margin-bottom: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .checkbox {
+    width: 210px;
+    margin-bottom: 33px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .checkbox {
+    width: auto;
+    margin-bottom: 33px;
+  }
+}
+
+.checkbox__text {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  text-transform: none;
+  text-align: left;
+
+  color: @text-color;
+}
+
+.checkbox__input + .checkbox__label {
+  width: 55px;
+  height: 55px;
+  margin-right: 25px;
+
+  background: @form-color;
+  border-radius: 10%;
+}
+
+.checkbox__input:checked + .checkbox__label::before {
+  content: "";
+
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+
+  width: 25px;
+  height: 19px;
+
+  background: url("../img/icon-tick.svg") no-repeat 0 0;
+}
+
+.checkbox__input:hover + .checkbox__label {
+  background-color: #e5e5e5;
+}
+
+.checkbox__input:focus + .checkbox__label {
+  outline: thin dotted;
+}
+
+.checkbox__input:disabled + .checkbox__label {
+  background-color: #d5d5d5;
+}
+
+.checkbox__input:checked:disabled + .checkbox__label::before {
+  opacity: 0.3;
+}
