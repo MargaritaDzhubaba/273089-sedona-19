@@ -5,8 +5,6 @@
   justify-content: center;
   align-items: center;
 
-  height: 389px;
-
   text-align: center;
 
   background-color: @accent-color;
@@ -25,7 +23,7 @@
   transform: translateX(-50%);
 
   height: 26px;
-  width: 320px;
+  width: 100%;
 
   background-position: center;
   background-repeat: no-repeat;
@@ -33,13 +31,8 @@
 }
 
 @media (min-width: @tablet-width) {
-  .welcome-promo {
-    height: 518px;
-  }
-
   .welcome-promo::before {
     height: 57px;
-    width: 768px;
 
     background-image: url("../img/bg-intro-triangle-tablet.svg");
   }
@@ -47,15 +40,11 @@
 
 @media (min-width: @desktop-width) {
   .welcome-promo::before {
-    width: 1200px;
-
     background-image: url("../img/bg-intro-triangle-desktop.svg");
   }
 }
 
 .welcome-promo--inner {
-  height: 158px;
-
   background-color: @accent-color;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-position: bottom;
@@ -63,14 +52,18 @@
   background-repeat: no-repeat;
 }
 
+.welcome-promo__image {
+  padding: 90px 0 85px;
+}
+
 @media (min-width: @tablet-width) {
-  .welcome-promo--inner {
-    height: 290px;
+  .welcome-promo__image {
+    padding: 77px 0 91px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .welcome-promo--inner {
-    height: 302px;
+  .welcome-promo__image {
+    padding: 78px 0 90px;
   }
 }

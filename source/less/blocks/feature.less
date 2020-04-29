@@ -11,12 +11,20 @@
 
 @media (min-width: @tablet-width) {
   .feature--reverse {
-    .text-info {
-      order: 2;
-    }
+    flex-direction: row-reverse;
 
-    .feature__image {
-      order: 1;
+    .text-info {
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .feature--reverse {
+    .text-info {
+      padding-left: 85px;
+      padding-right: 85px;
     }
   }
 }
