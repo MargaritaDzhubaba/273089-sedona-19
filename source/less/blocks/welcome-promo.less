@@ -10,8 +10,36 @@
   background-color: @accent-color;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-position: bottom;
-  background-size: cover;
+  background-size: 768px auto;
   background-repeat: no-repeat;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .welcome-promo {
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-position: center -84px;
+    background-size: 1200px auto;
+
+    // @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    //   background-image: url("../img/bg-back-tablet@2x.jpg");
+    // }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .welcome-promo {
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-position: center top;
+    background-size: cover;
+
+    // @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    //   background-image: url("../img/bg-back-desktop@2x.jpg");
+    // }
+  }
 }
 
 .welcome-promo::before {
@@ -44,20 +72,17 @@
   }
 }
 
-.welcome-promo--inner {
-  background-color: @accent-color;
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-position: bottom;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
 .welcome-promo__image {
+  display: block;
+  width: 281px;
+  height: auto;
   padding: 90px 0 85px;
 }
 
 @media (min-width: @tablet-width) {
   .welcome-promo__image {
+    width: 460px;
+
     padding: 77px 0 91px;
   }
 }
@@ -65,5 +90,39 @@
 @media (min-width: @desktop-width) {
   .welcome-promo__image {
     padding: 78px 0 90px;
+  }
+}
+
+.welcome-promo--inner {
+  background-position: bottom;
+
+  .welcome-promo__image {
+    display: block;
+    width: 229px;
+    height: auto;
+
+    padding: 52px 0 66px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .welcome-promo--inner {
+    background-size: 1200px auto;
+    background-position: left bottom;
+
+    .welcome-promo__image {
+      width: 460px;
+
+      padding: 94px 0 116px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .welcome-promo--inner {
+
+    .welcome-promo__image {
+      padding: 102px 0 120px;
+    }
   }
 }
