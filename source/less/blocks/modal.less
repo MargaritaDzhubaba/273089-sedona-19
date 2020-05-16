@@ -1,0 +1,16 @@
+.modal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%);
+
+  z-index: 100;
+
+  @media (min-width: @desktop-width) {
+    top: 150vh;
+  }
+
+  &--close {
+    display: none;
+  }
+}

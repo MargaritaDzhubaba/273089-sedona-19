@@ -27,6 +27,7 @@
   height: 48px;
 
   background-color: @accent-color;
+  color: @main-color;
 
   cursor: pointer;
 
@@ -38,11 +39,16 @@
     background-color: #5496bd;
 
     .social-networks__icon {
-      fill: fade(@main-color, 30%);
+      fill-opacity: 0.3;
     }
   }
 }
 
 .social-networks__icon {
   fill: @main-color;
+  margin: 0 auto;
 }
+
+// .social-networks__link:active .social-networks__icon {
+//   fill-opacity: 0.3;
+// }
