@@ -3,10 +3,15 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/style.css" rel="stylesheet">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
+
+    <div style="display: none">
+      <include src="source/img/sprite.svg"></include>
+    </div>
+
     <header class="page-header">
       <div class="wrapper">
         <nav class="main-nav main-nav--closed main-nav--nojs">
@@ -162,7 +167,7 @@
         <div class="text-info text-info--video-player">
           <h2 class="text-info__title page-title">Все еще сомневаетесь?</h2>
           <p class="text-info__text page-text">
-            Смотрите видеопрезентацию и скорее&nbsp;за&nbsp;билетами, пока<br> они не подорожали&nbsp;в&nbsp;очередной&nbsp;раз!
+            Смотрите видеопрезентацию и скорее&nbsp;за&nbsp;билетами, пока они не подорожали&nbsp;в&nbsp;очередной&nbsp;раз!
           </p>
         </div>
         <div class="player">
@@ -231,12 +236,12 @@
         <span class="copyright__author">Разработано</span>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт HTML Academy">
           <svg class="copyright__icon" width="27" height="34">
-            <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
+            <use xlink:href="img/sprite.svg#icon-logo-htmlacademy"></use>
           </svg>
         </a>
       </div>
     </footer>
 
-    <!-- <script src="js/script.js"></script> -->
+    <script src="js/script.js"></script>
   </body>
 </html>

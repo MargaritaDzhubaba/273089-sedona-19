@@ -3,11 +3,18 @@
   flex-direction: column;
 
   .list-reset();
+
+  padding-top: 25px;
+  padding-left: @mobilPadding;
+  padding-right: @mobilPadding;
+  padding-bottom: 19px;
 }
 
 @media (min-width: @tablet-width) {
   .advantages {
     flex-direction: row;
+
+    padding: 0;
   }
 }
 
@@ -16,7 +23,6 @@
 
   padding-top: 11px;
   padding-left: 50px;
-  padding-right: @mobilPadding;
   padding-bottom: 18px;
 
   .text-info__title {
