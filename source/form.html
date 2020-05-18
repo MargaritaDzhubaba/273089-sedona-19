@@ -3,10 +3,15 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/style.css" rel="stylesheet">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
+
+    <div style="display: none">
+      <include src="source/img/sprite.svg"></include>
+    </div>
+
     <header class="page-header">
       <div class="wrapper">
         <nav class="main-nav main-nav--closed main-nav--nojs">
@@ -56,17 +61,17 @@
             <span class="form__title">Представьтесь:</span>
             <label class="input">
               <span class="form__text">Имя*:</span>
-              <input class="input__field" type="text" name="name" placeholder="Петр">
+              <input class="input__field" type="text" name="user-name" placeholder="Петр">
             </label>
 
             <label class="input">
               <span class="form__text">Фамилия*:</span>
-              <input class="input__field" type="text" name="surname" placeholder="Иванов">
+              <input class="input__field" type="text" name="user-surname" placeholder="Иванов">
             </label>
 
             <label class="input">
               <span class="form__text form__text--patronymic">Отчество:</span>
-              <input class="input__field" type="text" name="patronymic" placeholder="Александрович">
+              <input class="input__field" type="text" name="user-patronymic" placeholder="Александрович">
             </label>
           </div>
 
@@ -79,7 +84,7 @@
                 <span class="form__text">
                   <span class="form__text--hide">Контактный</span> телефон*:
                 </span>
-                <input class="input__field" type="tel" name="phone" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}" placeholder="Введите телефон">
+                <input class="input__field" type="tel" name="phone" placeholder="Введите телефон">
                 <span class="input__icon input__icon--phone"></span>
               </label>
               <label class="input input--with-icon">
@@ -94,7 +99,7 @@
             <span class="form__title">Ваше общее впечатление:</span>
               <ul class="form__wrapper--radio">
                 <li class="radio">
-                  <input class="radio__input visually-hidden" type="radio" id="impression-positive" name="impression" value="positive" checked disabled>
+                  <input class="radio__input visually-hidden" type="radio" id="impression-positive" name="impression" value="positive" checked="" disabled="">
                   <label class="radio__label" for="impression-positive"></label>
                   <span class="radio__text">Скорее положительное</span>
                 </li>
@@ -119,17 +124,17 @@
             </span>
             <ul class="form__wrapper--checkbox">
               <li class="checkbox">
-                <input class="checkbox__input visually-hidden" type="checkbox" id="checkbox-bridge" name="Devil's Bridge Trail" checked disabled>
+                <input class="checkbox__input visually-hidden" type="checkbox" id="checkbox-bridge" name="Devil's Bridge Trail" checked="" disabled="">
                 <label class="checkbox__label" for="checkbox-bridge"></label>
                 <span class="checkbox__text">Мост Дьявола</span>
               </li>
               <li class="checkbox">
-                <input class="checkbox__input visually-hidden" type="checkbox" id="checkbox-bell-rock" name="Bell rock" checked>
+                <input class="checkbox__input visually-hidden" type="checkbox" id="checkbox-bell-rock" name="Bell rock" checked="">
                 <label class="checkbox__label" for="checkbox-bell-rock"></label>
                 <span class="checkbox__text">Гора-Колокол</span>
               </li>
               <li class="checkbox">
-                <input class="checkbox__input visually-hidden" type="checkbox" id="checkbox-slide-rock" name="Slide Rock State Park" checked>
+                <input class="checkbox__input visually-hidden" type="checkbox" id="checkbox-slide-rock" name="Slide Rock State Park" checked="">
                 <label class="checkbox__label" for="checkbox-slide-rock"></label>
                 <span class="checkbox__text">Слайд-парк</span>
               </li>
@@ -155,7 +160,7 @@
       </section>
 
       <section class="form-modal">
-        <div class="form-modal__success modal modal--close">
+        <div class="form-modal__success modal">
           <div class="form-modal__wrapper form-modal__wrapper--success">
             <h2 class="form-modal__title">
               Ваш отзыв отправлен!
@@ -165,11 +170,11 @@
             </p>
           </div>
           <div class="form-modal__modal-footer">
-            <button class="form-modal__button form-modal__button--success button" type="button" id="close-modal-success">Закрыть окно</button>
+            <button class="form-modal__button form-modal__button--success button" type="button" id="button-success">Закрыть окно</button>
           </div>
         </div>
 
-        <div class="form-modal__error modal modal--close">
+        <div class="form-modal__error modal">
           <div class="form-modal__wrapper form-modal__wrapper--error">
             <h2 class="form-modal__title form-modal__title--error">
               Что-то пошло не так!
@@ -177,7 +182,7 @@
             <p class="form-modal__text">
               Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
             </p>
-            <button class="form-modal__button button" id="close-modal-error">ОК</button>
+            <button class="form-modal__button button" id="button-error">ок</button>
           </div>
         </div>
       </section>
@@ -212,7 +217,7 @@
         <span class="copyright__author">Разработано</span>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт HTML Academy">
           <svg class="copyright__icon" width="27" height="34">
-            <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
+            <use xlink:href="img/sprite.svg#icon-logo-htmlacademy"></use>
           </svg>
         </a>
       </div>
