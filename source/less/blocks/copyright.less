@@ -2,8 +2,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
 
-  margin-left: auto;
+@media (min-width: @tablet-width) {
+  .copyright {
+    width: 33.33%;
+    justify-content: flex-end;
+  }
 }
 
 .copyright__author {
@@ -24,10 +29,14 @@
   fill: @text-color;
 }
 
-.copyright__link:disabled .copyright__icon {
+.copyright__icon:disabled {
   fill: @accent-color;
 }
 
-.copyright__link:hover .copyright__icon {
+.copyright__icon:hover {
+  fill: @accent-color;
+}
+
+.copyright__icon:focus {
   fill: @accent-color;
 }

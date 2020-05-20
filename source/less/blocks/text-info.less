@@ -81,7 +81,9 @@
     padding: 45px;
 
     .text-info__title {
+      width: 162px;
       font-size: 21px;
+      margin: 0 auto;
       margin-bottom: 9px;
     }
 
@@ -99,6 +101,31 @@
   }
 }
 
+.text-info--advantages {
+  padding: 0;
+  margin: 0 auto;
+
+  text-align: left;
+}
+
+@media (min-width: @tablet-width) {
+  .text-info--advantages {
+    max-width: 164px;
+
+    text-align: center;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .text-info--advantages {
+    max-width: 263px;
+  }
+
+  .text-info--advantages-burger {
+    max-width: 283px;
+  }
+}
+
 .text-info--grey {
   padding-top: 28px;
   padding-bottom: 0;
@@ -106,6 +133,15 @@
   text-align: left;
 
   background-color: #f2f2f2;
+}
+
+@media (min-width: @tablet-width) {
+  .text-info--grey {
+    .text-info__title {
+      width: 157px;
+      margin: 0 auto;
+    }
+  }
 }
 
 .text-info--gallery {
@@ -174,15 +210,15 @@
 @media (min-width: @desktop-width) {
   .text-info--video-player {
     padding-top: 72px;
-    padding-left: 350px;
-    padding-right: 350px;
+    padding-left: 380px;
+    padding-right: 380px;
     padding-bottom: 70px;
   }
 }
 
 .text-info--feedback-form {
   padding-top: 39px;
-  padding-bottom: 15px;
+  padding-bottom: 16px;
 
   .text-info__title {
     margin-bottom: 26px;

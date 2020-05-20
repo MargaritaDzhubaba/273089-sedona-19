@@ -71,6 +71,10 @@
     background-color: #669ec0;
   }
 
+  &:focus {
+    background-color: #669ec0;
+  }
+
   &:active {
     color: fade(@main-color, 30%);
     background-color: #5496bd;
@@ -102,12 +106,17 @@
 
   .main-nav__link:hover {
     color: @accent-color;
-    background-color: white;
+    background-color: @main-color;
+  }
+
+  .main-nav__link:focus {
+    color: @accent-color;
+    background-color: @main-color;
   }
 
   .main-nav__link:active {
     color: @accent-color;
-    background-color: white;
+    background-color: @main-color;
   }
 
   .main-nav__link:disabled {
@@ -119,6 +128,11 @@
   }
 
   .main-nav__link--active:hover {
+    color: #604e43;
+    background-color: @main-color;
+  }
+
+  .main-nav__link--active:focus {
     color: #604e43;
     background-color: @main-color;
   }
@@ -180,4 +194,18 @@
 .main-nav__image {
   display: block;
   width: 100%;
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav__image {
+    width: 102px;
+    height: 84px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav__image {
+    width: 187px;
+    height: 97px;
+  }
 }
