@@ -1,33 +1,14 @@
-var navMain = document.querySelector('.main-nav');
-var navToggle = navMain.querySelector('.main-nav__toggle');
-
-var form = document.querySelector('.form');
+// validation
+var form = document.querySelector(".form");
 var userName = form.querySelector("[name=user-name]");
 var userSurname = form.querySelector("[name=user-surname]");
 var userPhone = form.querySelector("[name=phone]");
 var userEmail = form.querySelector("[name=email]");
 
-var buttonSubmit = form.querySelector('.form__button');
-var modalSuccess = document.querySelector('.form-modal__success');
-var modalSuccessBtn = modalSuccess.querySelector('#button-success');
-var modalError = document.querySelector('.form-modal__error');
-var modalErrorBtn = modalError.querySelector('#button-error');
-
-// navigation
-
-navMain.classList.remove('main-nav--nojs');
-
-navToggle.addEventListener('click', function() {
-  if (navMain.classList.contains('main-nav--closed')) {
-    navMain.classList.remove('main-nav--closed');
-    navMain.classList.add('main-nav--opened');
-  } else {
-    navMain.classList.add('main-nav--closed');
-    navMain.classList.remove('main-nav--opened');
-  }
-});
-
-// validation
+var modalSuccess = document.querySelector(".form-modal__success");
+var modalSuccessBtn = modalSuccess.querySelector("#button-success");
+var modalError = document.querySelector(".form-modal__error");
+var modalErrorBtn = modalError.querySelector("#button-error");
 
 form.addEventListener("submit", function (evt) {
   evt.preventDefault();

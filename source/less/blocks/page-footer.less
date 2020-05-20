@@ -3,13 +3,25 @@
   flex-direction: column;
   align-items: center;
 
-  padding: 30px @mobilPadding;
+  padding: 37px @mobilPadding;
+}
+
+@media (min-width: @mobile-width-only) {
+  .page-footer--photo {
+    padding: 31px @mobilPadding;
+  }
+}
+
+@media (min-width: @mobile-width-only) {
+  .page-footer--form {
+    padding: 34px @mobilPadding;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .page-footer {
     flex-direction: row;
-    justify-content: space-between;
+    width: 100%;
 
     padding: 30px @tabletPadding;
   }
@@ -34,6 +46,7 @@
 
 @media (min-width: @tablet-width) {
   .page-footer__hashtag {
-    margin-right: auto;
+    width: 33.33%;
+    text-align: left;
   }
 }

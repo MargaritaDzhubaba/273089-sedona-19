@@ -6,7 +6,8 @@
 
 @media (min-width: @tablet-width) {
   .copyright {
-    margin-left: auto;
+    width: 33.33%;
+    justify-content: flex-end;
   }
 }
 
@@ -33,5 +34,9 @@
 }
 
 .copyright__icon:hover {
+  fill: @accent-color;
+}
+
+.copyright__icon:focus {
   fill: @accent-color;
 }

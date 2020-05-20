@@ -42,7 +42,7 @@
   }
 }
 
-.welcome-promo::after {
+.welcome-promo::before {
   content: "";
 
   position: absolute;
@@ -53,23 +53,22 @@
   height: 26px;
   width: 100%;
 
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url("../img/bg-intro-triangle-mobile.svg");
+  background: transparent url("../img/bg-intro-triangle-mobile.svg") no-repeat center center;
 }
 
 @media (min-width: @tablet-width) {
-  .welcome-promo::after {
+  .welcome-promo::before {
     height: 57px;
 
-    background-image: url("../img/bg-intro-triangle-tablet.svg");
+    background: transparent url("../img/bg-intro-triangle-tablet.svg") no-repeat center center;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .welcome-promo::after {
-    background-image: url("../img/bg-intro-triangle-desktop.svg");
+  .welcome-promo::before {
+    height: 57px;
+
+    background: transparent url("../img/bg-intro-triangle-desktop.svg") no-repeat center center;
   }
 }
 

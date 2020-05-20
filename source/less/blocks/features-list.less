@@ -8,6 +8,7 @@
 @media (min-width: @tablet-width) {
   .features-list {
     flex-direction: row;
+    flex-wrap: wrap;
   }
 }
 
@@ -16,6 +17,13 @@
   padding-left: @mobilPadding;
 
   text-align: center;
+}
+
+.features-list__item--reason-four {
+  .features-list__text {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -35,6 +43,16 @@
 
     .text-info__number {
       margin-bottom: 21px;
+    }
+  }
+
+  .features-list__item--reason-four {
+    padding-left: 50px;
+    padding-right: 50px;
+
+    .features-list__text {
+      padding-right: 0;
+      padding-left: 0;
     }
   }
 }
