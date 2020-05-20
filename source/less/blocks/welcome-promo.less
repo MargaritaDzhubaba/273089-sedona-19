@@ -47,18 +47,21 @@
 
   position: absolute;
   bottom: 0;
+  left: 0;
 
   height: 26px;
   width: 100%;
 
-  background: transparent url("../img/bg-intro-triangle-mobile.svg") no-repeat center center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../img/bg-intro-triangle-mobile.svg");
 }
 
 @media (min-width: @tablet-width) {
   .welcome-promo::before {
     height: 57px;
 
-    background: transparent url("../img/bg-intro-triangle-tablet.svg") no-repeat center center;
+    background-image: url("../img/bg-intro-triangle-tablet.svg");
   }
 }
 
@@ -66,7 +69,7 @@
   .welcome-promo::before {
     height: 57px;
 
-    background: transparent url("../img/bg-intro-triangle-desktop.svg") no-repeat center center;
+    background-image: url("../img/bg-intro-triangle-desktop.svg");
   }
 }
 
