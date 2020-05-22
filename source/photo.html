@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Седона</title>
+    <link rel="preload" href="fonts/ptsans.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/ptsansbold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
@@ -35,7 +37,7 @@
           <picture>
             <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
-            <img class="main-nav__image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип сайта Седона">
+            <img class="page-header__image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип сайта Седона">
           </picture>
         </a>
       </div>
@@ -71,8 +73,10 @@
                 </picture>
               </a>
               <figcaption class="post__figcaption">
-                <h3 class="post__title">Неродные просторы</h3>
-                <p class="post__description">Автор фото: Борис</p>
+                <div class="post__wrapper">
+                  <h3 class="post__title">Неродные просторы</h3>
+                  <p class="post__description">Автор фото: Борис</p>
+                </div>
                 <div class="post__likes">
                   <svg class="post__icon" width="22" height="20">
                     <use xlink:href="#icon-like"></use>
@@ -97,8 +101,10 @@
                 </picture>
               </a>
               <figcaption class="post__figcaption">
-                <h3 class="post__title">Местная растительность</h3>
-                <p class="post__description">Автор фото: Сергей</p>
+                <div class="post__wrapper">
+                  <h3 class="post__title">Местная растительность</h3>
+                  <p class="post__description">Автор фото: Сергей</p>
+                </div>
                 <div class="post__likes">
                   <svg class="post__icon" width="22" height="20">
                     <use xlink:href="#icon-like"></use>
@@ -123,8 +129,10 @@
                 </picture>
               </a>
               <figcaption class="post__figcaption">
-                <h3 class="post__title">Дорога на север</h3>
-                <p class="post__description">Автор фото: Петр</p>
+                <div class="post__wrapper">
+                  <h3 class="post__title">Дорога на север</h3>
+                  <p class="post__description">Автор фото: Петр</p>
+                </div>
                 <div class="post__likes">
                   <svg class="post__icon" width="22" height="20">
                     <use xlink:href="#icon-like"></use>
@@ -149,8 +157,10 @@
                 </picture>
               </a>
               <figcaption class="post__figcaption">
-                <h3 class="post__title">Мост дьявола</h3>
-                <p class="post__description">Автор фото: Антон</p>
+                <div class="post__wrapper">
+                  <h3 class="post__title">Мост дьявола</h3>
+                  <p class="post__description">Автор фото: Антон</p>
+                </div>
                 <div class="post__likes">
                   <svg class="post__icon" width="22" height="20">
                     <use xlink:href="#icon-like"></use>
@@ -177,7 +187,7 @@
             <source type="image/webp" srcset="img/video-mobile@1x.webp 1x, img/video-mobile@2x.webp 2x">
 
             <source media="(min-width: 1200px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/pvideo-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
             <img class="player__image" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Видеопрезентация туристического города Седона">
           </picture>
           <div class="player__wrapper">

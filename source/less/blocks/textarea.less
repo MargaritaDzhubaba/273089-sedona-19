@@ -14,17 +14,17 @@
   border: none;
 
   resize: vertical;
-
-  &:hover {
-    background-color: #e5e5e5;
-  }
-
-  &:focus {
-    background-color: @main-color;
-    box-shadow: inset 0 0 0 4px #e5e5e5;
-  }
 }
 
-.textarea::placeholder {
+.textarea:hover {
+  background-color: #e5e5e5;
+}
+
+.textarea:focus {
+  background-color: @main-color;
+  box-shadow: inset 0 0 0 4px #e5e5e5;
+}
+
+.textarea:-ms-input-placeholder {
   color: @text-color;
 }

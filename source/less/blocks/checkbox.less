@@ -14,19 +14,14 @@
     margin-bottom: 62px;
   }
 
-  .checkbox:nth-last-child(-n+2) {
-    margin-bottom: 0;
-  }
+  // .checkbox:nth-last-child(-n+2) {
+  //   margin-bottom: 0;
+  // }
 }
 
 @media (min-width: @desktop-width) {
   .checkbox {
     width: auto;
-    margin-bottom: 0;
-  }
-
-  .checkbox:last-child {
-    margin-right: 3px;
   }
 }
 
@@ -85,10 +80,10 @@
   outline-width: 5px;
 }
 
-.checkbox__input:disabled + .checkbox__label::before {
+.checkbox__input:active + .checkbox__label::before {
   background-color: #d5d5d5;
 }
 
-.checkbox__input:checked:disabled + .checkbox__label::after {
+.checkbox__input:checked:active + .checkbox__label::after {
   opacity: 0.3;
 }

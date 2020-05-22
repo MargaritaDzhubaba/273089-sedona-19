@@ -40,6 +40,11 @@
 
 .input__field::placeholder {
   color: @text-color;
+  opacity: 1; /* Firefox */
+}
+
+.input__field:-ms-input-placeholder {
+  color: @text-color;
 }
 
 .input__wrapper {
@@ -82,7 +87,6 @@
     align-items: baseline;
 
     width: 50%;
-    margin-bottom: 0;
 
     .form__text {
       padding: 0;

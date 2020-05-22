@@ -115,12 +115,8 @@
   }
 
   .main-nav__link:active {
-    color: @accent-color;
-    background-color: @main-color;
-  }
-
-  .main-nav__link:disabled {
     color: fade(@text-color, 30%);
+    background-color: @main-color;
   }
 
   .main-nav__link--active {
@@ -137,7 +133,7 @@
     background-color: @main-color;
   }
 
-  .main-nav__link--active:disabled {
+  .main-nav__link--active:active {
     color: rgba(118, 99, 87, 0.3);
   }
 }
@@ -171,6 +167,15 @@
   background: url("../img/icon-cross.svg") no-repeat center center;
 }
 
+.main-nav__toggle:hover,
+.main-nav__toggle:focus {
+  opacity: 0.5;
+}
+
+.main-nav__toggle:active {
+  opacity: 0.3;
+}
+
 @media (max-width: @mobile-width-only) {
   .main-nav--closed .main-nav__item {
     display: none;
@@ -188,24 +193,5 @@
 @media (min-width: @tablet-width) {
   .main-nav__toggle {
     display: none;
-  }
-}
-
-.main-nav__image {
-  display: block;
-  width: 100%;
-}
-
-@media (min-width: @tablet-width) {
-  .main-nav__image {
-    width: 102px;
-    height: 84px;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .main-nav__image {
-    width: 187px;
-    height: 97px;
   }
 }

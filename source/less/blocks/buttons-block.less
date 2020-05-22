@@ -41,11 +41,12 @@
   fill: #5c6870;
 }
 
-.buttons-block__icon:hover {
+.buttons-block__icon:hover,
+.buttons-block__icon:focus {
   fill: @text-color-muted;
 }
 
-.buttons-block__icon:disabled {
+.buttons-block__icon:active {
   fill: fade(@text-color-muted, 30%);
 }
 
@@ -54,11 +55,12 @@
     fill: @main-color;
   }
 
-  .buttons-block__icon:hover {
+  .buttons-block__icon:hover,
+  .buttons-block__icon:focus {
     fill: fade(@main-color, 60%);
   }
 
-  .buttons-block__icon:disabled {
+  .buttons-block__icon:active {
     fill: fade(@main-color, 30%);
   }
 }

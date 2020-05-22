@@ -74,7 +74,7 @@
   }
 }
 
-.radio__input + .radio__label:hover::before {
+.radio__input:hover + .radio__label::before {
   background-color: #e5e5e5;
 }
 
@@ -85,10 +85,10 @@
   outline-width: 5px;
 }
 
-.radio__input + .radio__label:disabled::before {
+.radio__input:active + .radio__label::before {
   background-color: #d5d5d5;
 }
 
-.radio__input:checked:disabled + .radio__label::after {
+.radio__input:checked:active + .radio__label::after {
   opacity: 0.3;
 }

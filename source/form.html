@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Седона</title>
+    <link rel="preload" href="fonts/ptsans.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/ptsansbold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
@@ -35,7 +37,7 @@
           <picture>
             <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
-            <img class="main-nav__image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип сайта Седона">
+            <img class="page-header__image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип сайта Седона">
           </picture>
         </a>
       </div>
@@ -82,19 +84,19 @@
             <div class="form__wrapper form__wrapper--contacts">
               <label class="input input--with-icon">
                 <span class="form__text">
-                  <span class="form__text--hide">Контактный</span> телефон*:
+                  <span class="form__text-hide">Контактный</span> телефон*:
                 </span>
-                <div class="input__wrapper">
+                <span class="input__wrapper">
                   <input class="input__field" type="tel" name="phone" placeholder="Введите телефон">
                   <span class="input__icon input__icon--phone"></span>
-                </div>
+                </span>
               </label>
               <label class="input input--with-icon">
                 <span class="form__text">Электронная почта*:</span>
-                <div class="input__wrapper">
+                <span class="input__wrapper">
                   <input class="input__field" type="email" name="email" placeholder="Введите e-mail">
                   <span class="input__icon input__icon--email"></span>
-                </div>
+                </span>
               </label>
             </div>
           </div>
@@ -127,7 +129,7 @@
 
           <div class="form__fieldset form__fieldset--checkbox">
             <span class="form__title form__title--decorated">
-              <span>Посещенные<br> достопримечательности:</span>
+              <span>Посещенные достопримечательности:</span>
             </span>
             <ul class="form__wrapper form__wrapper--checkbox">
               <li class="checkbox">

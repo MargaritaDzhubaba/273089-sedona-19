@@ -9,6 +9,7 @@
   .gallery__list {
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: stretch;
 
     padding: 0 @tabletPadding;
   }
@@ -26,5 +27,18 @@
 
     display: flex;
     flex-direction: column;
+
+    background-color: @form-color;
+  }
+
+  .gallery__item:nth-child(2n+3) {
+    background-color: #eaeaea;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .gallery__item,
+  .gallery__item:nth-child(2n+3) {
+    background-color: rgba(0, 1, 1, 0.2);
   }
 }

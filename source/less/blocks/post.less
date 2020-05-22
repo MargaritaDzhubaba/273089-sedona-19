@@ -1,4 +1,5 @@
 .post {
+  width: 320px;
   padding-top: 22px;
   padding-left: @mobilPadding;
   padding-right: @mobilPadding;
@@ -54,23 +55,25 @@
 }
 
 .post__figcaption {
+  display: flex;
+  flex-direction: column;
+
   padding-top: 16px;
   padding-bottom: 16px;
 }
 
 @media (min-width: @tablet-width) {
   .post__figcaption {
-    display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 
     width: 100%;
-    height: 80px;
-    align-items: center;
 
     padding-top: 16px;
     padding-left: 20px;
     padding-right: 30px;
-    padding-bottom: 15px;
+    padding-bottom: 16px;
 
     background-color: @form-color;
   }
@@ -119,6 +122,17 @@
   }
 }
 
+.post__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+// @media (min-width: @tablet-width) {
+//   .post__wrapper {
+//     display: flex;
+//   }
+// }
+
 .post__title {
   width: 100%;
 
@@ -161,6 +175,8 @@
 
   line-height: 24px;
   font-weight: bold;
+  white-space: nowrap;
+
   color: @text-color;
 }
 
@@ -173,16 +189,10 @@
 }
 
 @media (min-width: @tablet-width) {
-  .post__likes {
-    margin-left: auto;
-
-    transform: translateY(-39px);
-  }
-
   .post__icon {
-    margin-right: 7px;
+    margin-right: 6px;
 
-    transform: translateY(3px);
+    transform: translateY(2px);
 
     fill: fade(@text-color, 30%);
   }
